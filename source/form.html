@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="105" height="85" alt="Логотип города Седона">
+      </a>
+    </header>
+    <main class="form-main">
+      <h1 class="visually-hidden">Путеводитель по городу Седона</h1>
+      <h2>Оставьте свой отзыв</h2>
+      <p class="form-main__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="name">
+          <fieldset>
+            <legend>Представьтесь</legend>
+            <label>Имя*:<input type="text" placeholder="Петр" required></label>
+            <label>Фамилия:<input type="text" placeholder="Иванов"></label>
+            <label>Отчество:<input type="text" placeholder="Александрович"></label>
+          </fieldset>
+        </div>
+        <div class="contacts">
+          <fieldset>
+            <legend>Контактная информация:</legend>
+            <label>Контактный телефон*:<input type="tel" placeholder="Введите телефон" required></label>
+            <label>Электронная почта*:<input type="email" placeholder="Введите e-mail" required></label>
+          </fieldset>
+        </div>
+        <div class="impression">
+          <fieldset>
+            <legend>Ваше общее впечатление:</legend>
+            <label>Скорее положительное<input type="radio" name="impression"></label>
+            <label>Скорее отрицательное<input type="radio" name="impression"></label>
+            <label>Затрудняюсь ответить<input type="radio" name="impression"></label>
+          </fieldset>
+        </div>
+        <div class="attractions">
+          <fieldset>
+            <legend>Посещенные достопримечательности:</legend>
+            <label>Мост Дьявола<input type="checkbox" checked></label>
+            <label>Гора-Колокол<input type="checkbox" checked></label>
+            <label>Слайд-парк<input type="checkbox" checked></label>
+            <label>Красные скалы<input type="checkbox"></label>
+          </fieldset>
+        </div>
+        <div class="emotions">
+          <fieldset>
+            <legend>Опишите свои эмоции:</legend>
+            <textarea name="comment" cols="40" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+        </div>
+        <button type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <p class="contacts__text">#visitsedona</p>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com">Мы на Ютюб</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
