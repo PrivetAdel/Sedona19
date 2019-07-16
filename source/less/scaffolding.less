@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("fonts/ptsansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: @black;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: @white;
+}
+
+a {
+  text-decoration: none;
+  color: @white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

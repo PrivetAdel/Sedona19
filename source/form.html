@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -26,11 +27,12 @@
         </div>
       </nav>
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="105" height="85" alt="Логотип города Седона">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="85" alt="Логотип города Седона">
       </a>
     </header>
     <main class="form-main">
       <h1 class="visually-hidden">Путеводитель по городу Седона</h1>
+      <img class="page-main__image" src="img/bg-back-mobile@1x.jpg" width="320" height="170" alt="Город Седона">
       <h2>Оставьте свой отзыв</h2>
       <p class="form-main__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -95,9 +97,19 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
+    <section class="popup">
+      <h2>Что-то пошло не так!</h2>
+      <p>Проверьте поля, выделенные красным, скорее всего вы забыли из заполнить</p>
+      <button type="button" name="button">Ок</button>
+    </section>
+    <section class="popup">
+      <h2>Ваш отзыв отправлен!</h2>
+      <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button type="button" name="button">Закрыть окно</button>
+    </section>
   </body>
 </html>
