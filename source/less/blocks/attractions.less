@@ -1,0 +1,139 @@
+.attractions {
+  width: 280px;
+  border: none;
+  margin: 19px auto 0;
+  padding: 0 20px;
+  border-bottom: 1px solid @lightgrey;
+}
+
+.attractions p {
+  margin: 19px 0 54px;
+}
+
+.attractions p:last-child {
+  margin-bottom: 41px;
+}
+
+.attractions label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  margin-left: 78px;
+  position: relative;
+}
+
+.attractions label::before {
+  content: "";
+  position: absolute;
+  left: -78px;
+  top: -14px;
+  width: 55px;
+  height: 55px;
+  border: 1px solid @lightgrey;
+  background-color: @lightgrey;
+  border-radius: 10%;
+}
+
+.attractions input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -61px;
+  top: 6px;
+  width: 55px;
+  height: 55px;
+  background-image: url("/img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .attractions {
+    margin: 26px auto 0;
+    padding: 0;
+    width: 648px;
+    border-bottom: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .attractions__wrapper {
+    display: flex;
+    margin: 0 0 23px;
+    flex-wrap: wrap;
+    padding: 0 33px 0 94px;
+    justify-content: space-between;
+  }
+
+  .attractions legend {
+    display: flex;
+    text-align: center;
+    padding: 0 118px;
+    margin-bottom: 37px;
+    position: relative;
+  }
+
+  .attractions legend::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 25px;
+    left: 0;
+    background-color: @grey;
+  }
+
+  .attractions legend::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 25px;
+    left: 525px;
+    background-color: @grey;
+  }
+
+  .attractions p {
+    margin: 19px 0 43px;
+    width: 260px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions {
+    width: 960px;
+    margin: 23px auto 0;
+  }
+
+  .attractions legend {
+    width: 400px;
+  }
+
+  .attractions legend::before {
+    width: 280px;
+    left: -161px;
+  }
+
+  .attractions legend::after {
+    width: 280px;
+    left: 519px;
+  }
+
+  .attractions__wrapper {
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .attractions p {
+    width: 205px;
+  }
+
+  .attractions p:first-child {
+    margin-right: 15px;
+  }
+
+  .attractions p:nth-child(2) {
+    margin-right: 18px;
+  }
+}

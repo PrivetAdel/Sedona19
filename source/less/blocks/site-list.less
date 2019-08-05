@@ -3,7 +3,64 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
-  border-bottom: 1px solid @grey;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
   text-align: center;
   text-transform: uppercase;
+  padding: 7px 0;
+}
+
+.site-list__item:first-child {
+  border-top: none;
+}
+
+.site-list__item:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    background-color: @white;
+    font-size: 14px;
+    line-height: 26px;
+    border: none;
+  }
+
+  .site-list__item a {
+    color: @black;
+  }
+
+  .site-list__item:first-child {
+    margin-left: 24px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-left: 77px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 210px;
+  }
+
+  .site-list__item:last-child {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item:first-child {
+    margin-left: 90px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-left: 163px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 382px;
+  }
+
+  .site-list__item:last-child {
+    margin-left: 138px;
+  }
 }

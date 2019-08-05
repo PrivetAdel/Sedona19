@@ -1,0 +1,42 @@
+.main-nav__wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 768px;
+  }
+
+  .main-nav__wrapper {
+    margin: -6px auto 0;
+    background-color: white;
+    padding-top: 6px;
+    padding-bottom: 2px;
+  }
+
+  .main-nav__wrapper ul {
+    margin: 7px auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    width: 720px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+
+  .main-nav__list {
+    width: 1200px;
+  }
+}

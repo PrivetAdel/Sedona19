@@ -1,0 +1,112 @@
+.contacts {
+  width: 280px;
+  border: none;
+  margin: 18px auto 0;
+  padding: 0 20px;
+  border-bottom: 1px solid @lightgrey;
+}
+
+.contacts p {
+  flex-direction: column;
+}
+
+.contacts p:last-child {
+  margin-bottom: 24px;
+}
+
+.contacts label {
+  margin: -2px 0 8px 22px;
+}
+
+.contacts input {
+  padding: 15px 60px 15px 20px;
+  margin-bottom: 6px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    margin: 34px auto 0;
+    padding: 0;
+    width: 648px;
+    border-bottom: none;
+  }
+
+  .contacts legend {
+    display: flex;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .contacts legend::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 12px;
+    left: -184px;
+    background-color: @grey;
+  }
+
+  .contacts legend::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 12px;
+    left: 341px;
+    background-color: @grey;
+  }
+
+  .contacts p {
+    margin-bottom: 25px;
+  }
+
+  .contacts input {
+    width: 88%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 960px;
+    margin: 32px auto 0;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts p {
+    flex-direction: row;
+  }
+
+  .contacts span {
+    display: none;
+  }
+
+  .contacts legend {
+    margin-bottom: 61px;
+  }
+
+  .contacts legend::before {
+    width: 280px;
+    top: 11px;
+    left: -342px;
+  }
+
+  .contacts legend::after {
+    width: 280px;
+    top: 11px;
+    left: 341px;
+  }
+
+  .contacts label {
+    margin: 0 18px 8px 0;
+  }
+
+  .contacts input {
+    width: 234px;
+  }
+}
