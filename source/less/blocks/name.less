@@ -1,0 +1,32 @@
+.name {
+  width: 280px;
+  border: none;
+  margin: 18px auto 0;
+  padding: 0 20px 4px;
+  border-bottom: 1px solid @lightgrey;
+}
+
+.name p {
+  margin: 10px 0 22px;
+}
+
+.name input {
+  margin-left: 15px;
+  width: 100px;
+  flex-grow: 2;
+}
+
+@media (min-width: @tablet-width) {
+  .name {
+    margin: 58px 0 0;
+    padding: 0 0 0 60px;
+    border-bottom: none;
+    width: 264px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .name {
+    width: 400px;
+  }
+}

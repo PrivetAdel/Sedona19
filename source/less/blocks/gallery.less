@@ -1,10 +1,146 @@
+.gallery {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.gallery ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__item {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid @grey;
+  margin-bottom: 22px;
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .gallery__title {
   line-height: 24px;
   font-weight: bold;
+  margin: 10px 0 0;
+  width: 210px;
 }
 
 .gallery__autor {
   line-height: 24px;
   text-transform: none;
   color: #333333;
+  margin: 0;
+}
+
+.gallery__button {
+  border: none;
+  background-color: inherit;
+  background-image: url("/img/icon-like.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  margin: 5px 0 20px;
+}
+
+.gallery__number {
+  padding: 0 10px 0;
+  font-weight: bold;
+  vertical-align: text-bottom;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    display: flex;
+    width: 768px;
+    margin: 0 auto 43px;
+  }
+
+  .gallery ul {
+    margin: 0 auto;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+
+  .gallery__item {
+    width: 324px;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    border-bottom: none;
+  }
+
+  .gallery__item:nth-child(2n) {
+    background-color: #f2f2f2;
+  }
+
+  .gallery__item img {
+    width: 324px;
+    height: 268px;
+  }
+
+  .gallery__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 15px;
+  }
+
+  .gallery__item:first-child {
+    width: 648px;
+  }
+
+  .gallery__item:first-child img {
+    width: 648px;
+    height: 400px;
+  }
+
+  .gallery__button {
+    margin: 19px 7px 10px;
+  }
+
+  .gallery__number {
+    padding: 0 1px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    width: 1200px;
+    margin: 0 auto 46px;
+  }
+
+  .gallery__list {
+    width: 1200px;
+  }
+
+  .gallery__item:first-child {
+    width: 1200px;
+  }
+
+  .gallery__item:first-child img {
+    width: 1200px;
+  }
+
+  .gallery__wrapper {
+    margin-top: -79px;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery__autor {
+    color: @white;
+  }
+
+  .gallery__item,
+  .gallery__item img {
+    width: 400px;
+  }
 }

@@ -1,0 +1,71 @@
+.impression {
+  width: 280px;
+  border: none;
+  margin: 20px auto 0;
+  padding: 0 20px;
+  border-bottom: 1px solid @lightgrey;
+}
+
+.impression p {
+  margin: 25px 0 43px;
+}
+
+.impression label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  margin-left: 78px;
+  position: relative;
+}
+
+.impression label::before {
+  content: "";
+  position: absolute;
+  left: -78px;
+  top: -14px;
+  width: 55px;
+  height: 55px;
+  border: 1px solid @lightgrey;
+  background-color: @lightgrey;
+  border-radius: 50%;
+}
+
+.impression input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -61px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid @darkgrey;
+  background-color: @darkgrey;
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .impression {
+    order: -1;
+    margin: 58px 0 0;
+    padding: 0;
+    border-right: 1px solid #eeeeee;
+    border-bottom: none;
+    width: 323px;
+  }
+
+  .impression p {
+    margin: 25px 0 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression {
+    width: 400px;
+    margin: 59px 0 0;
+    padding-right: 80px;
+  }
+
+  .impression legend {
+    margin-left: 80px;
+  }
+}
