@@ -7,12 +7,13 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script async src=js/picturefill.js></script>
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header page-header__main">
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -153,5 +154,19 @@
         </div>
       </footer>
     </div>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

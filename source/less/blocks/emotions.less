@@ -6,15 +6,27 @@
 }
 
 .emotions textarea {
-  border: none;
-  background-color: @lightgrey;
+  background-color: #f2f2f2;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  padding: 16px 19px;
+  padding: 11px 15px;
   color: @black;
+  border: 4px solid #f2f2f2;
 }
+
+.emotions textarea:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.emotions textarea:active,
+.emotions textarea:focus {
+  background-color: @white;
+  border-color: #e5e5e5;
+}
+
 
 @media (min-width: @tablet-width) {
   .emotions {

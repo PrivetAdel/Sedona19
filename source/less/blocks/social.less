@@ -21,6 +21,18 @@
   background-color: @lightblue;
 }
 
+.social__item:hover {
+  background-color: @blue;
+}
+
+.social__item:active {
+  background-color: darken(@lightblue, 25%);
+}
+
+.social__item:active svg {
+  fill: darken(@white, 25%);
+}
+
 .social__link svg {
   fill: @white;
 }

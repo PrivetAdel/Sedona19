@@ -10,6 +10,18 @@
   padding: 7px 0;
 }
 
+.site-list__item:hover {
+  background-color: @blue;
+}
+
+.site-list__item:active {
+  background-color: darken(@lightblue, 25%);
+}
+
+.site-list__item:active a {
+  color: darken(@white, 25%);
+}
+
 .site-list__item:first-child {
   border-top: none;
 }
@@ -28,6 +40,26 @@
 
   .site-list__item a {
     color: @black;
+  }
+
+  .site-list__item a:hover {
+    color: @lightblue;
+  }
+
+  .site-list__item a:active {
+    opacity: 0.3;
+  }
+
+  .site-list__item--active a {
+    color: #766357;
+  }
+
+  .site-list__item--active a:hover {
+    color: #604e43;
+  }
+
+  .site-list__item--active a:active {
+    opacity: 0.3;
   }
 
   .site-list__item:first-child {
