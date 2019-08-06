@@ -9,3 +9,16 @@
   padding: 16px 20px;
   border: none;
 }
+
+.button:hover {
+  background-color: @blue;
+}
+
+.button:active {
+  background-color: darken(@lightblue, 25%);
+  color: darken(@white, 25%);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}

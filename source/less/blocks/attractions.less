@@ -30,9 +30,19 @@
   top: -14px;
   width: 55px;
   height: 55px;
-  border: 1px solid @lightgrey;
-  background-color: @lightgrey;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
   border-radius: 10%;
+}
+
+.attractions label:hover::before {
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.attractions label:active::before {
+  border: 1px solid #d5d5d5;
+  background-color: #d5d5d5;
 }
 
 .attractions input:checked + label::after {
