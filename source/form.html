@@ -32,12 +32,17 @@
           </div>
         </nav>
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="85" alt="Логотип города Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="85" alt="Логотип города Седона">
+          </picture>
         </a>
       </header>
       <main class="form-main">
         <h1 class="visually-hidden">Путеводитель по городу Седона</h1>
         <div class="form-main__intro">
+          <img class="photo-main__text" src="img/text-sedona.svg" width="228" height="38" alt="">
           <h2>Оставьте свой отзыв</h2>
           <p class="form-main__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
@@ -63,12 +68,12 @@
             <legend>Контактная информация:</legend>
             <div class="contacts__wrapper">
               <p>
-                <label for="tel"><span>Контактный</span> телефон*:</label>
-                <input id="tel" type="tel" placeholder="Введите телефон" required>
+                <label class="contacts__tel" for="tel"><span>Контактный</span> телефон*:</label>
+                <input id="tel" type="tel" placeholder="Введите телефон" required="">
               </p>
               <p>
-                <label for="email">Электронная почта*:</label>
-                <input id="email" type="email" placeholder="Введите e-mail" required>
+                <label class="contacts__email" for="email">Электронная почта*:</label>
+                <input id="email" type="email" placeholder="Введите e-mail" required="">
               </p>
             </div>
           </fieldset>
@@ -115,7 +120,7 @@
             <textarea name="comment" cols="26" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="form__button button" type="submit">Отправить отзыв</button>
-          <span>* — обязательные поля</span>
+          <span class="remark">* &#8211; обязательные поля</span>
         </form>
       </main>
       <footer class="page-footer">
@@ -152,18 +157,20 @@
         </div>
       </footer>
       <section class="popup popup__error">
-        <div>
+        <div class="popup__text">
           <h2>Что-то пошло не так!</h2>
           <p>Проверьте поля, выделенные красным, скорее всего вы забыли из заполнить</p>
         </div>
         <button class="popup__button button" type="button" name="button">Ок</button>
       </section>
       <section class="popup popup__review">
-        <div>
+        <div class="popup__text">
           <h2>Ваш отзыв отправлен!</h2>
           <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         </div>
-        <button class="popup__button button" type="button" name="button">Закрыть окно</button>
+        <div class="popup__wrap">
+          <button class="popup__button button" type="button" name="button">Закрыть окно</button>
+        </div>
       </section>
     </div>
     <script>

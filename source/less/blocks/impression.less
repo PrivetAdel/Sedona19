@@ -58,6 +58,10 @@
   background-color: #a4a4a4;
 }
 
+.impression input:focus + label::before {
+  border: 2px solid @blue;
+}
+
 @media (min-width: @tablet-width) {
   .impression {
     order: -1;
