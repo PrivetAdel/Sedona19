@@ -29,6 +29,10 @@
   text-align: center;
 }
 
+.reasons__description picture {
+  height: 260px;
+}
+
 .reasons__image {
   margin: 0 auto;
 }
@@ -48,12 +52,20 @@
   margin: 18px 0 10px;
 }
 
+.reasons__title br {
+  display: none;
+}
+
 .reasons__item:first-child .reasons__description {
   padding: 37px 0 1px;
 }
 
 .reasons__item:nth-child(2) .reasons__description {
   padding: 20px 0 0;
+}
+
+.reasons__item:nth-child(3) {
+  margin-top: -6px;
 }
 
 .reasons__wrap {
@@ -95,14 +107,14 @@
 
   .reasons__description {
     width: 256px;
+    height: 256px;
     padding: 0;
     margin: 0;
   }
 
-  .reasons__item:nth-child(3) .reasons__description,
   .reasons__item:nth-child(4) .reasons__description,
   .reasons__item:nth-child(5) .reasons__description {
-    padding-bottom: 17px;
+    margin-top: -6px;
   }
 
   .reasons__description--border {
@@ -113,7 +125,6 @@
     width: 512px;
     padding: 0;
     margin: 0;
-    /*временно для сетки*/
     height: 256px;
   }
 
@@ -123,8 +134,12 @@
     padding: 0 10px 0 9px;
   }
 
+  .reasons__title br {
+    display: block;
+  }
+
   .reasons__item:first-child .reasons__description {
-    padding: 0 0 1px;
+    padding: 0;
   }
 
   .reasons__item:nth-child(2) .reasons__title {
@@ -139,8 +154,13 @@
     padding: 0 43px;
   }
 
-  .reasons__item:nth-child(2) .reasons__image {
-    order: -1;
+  .reasons__item:nth-child(2) .reasons__description {
+    order: 2;
+    padding: 0;
+  }
+
+  .reasons__item:nth-child(2) .reasons__wrap {
+    padding: 22px 43px 0;
   }
 }
 
@@ -151,15 +171,39 @@
 
   .reasons__description {
     width: 400px;
+    height: 256px;
   }
 
   .reasons__image {
     width: 800px;
   }
 
-  .reasons__item:nth-child(3) .reasons__description,
-  .reasons__item:nth-child(4) .reasons__description,
-  .reasons__item:nth-child(5) .reasons__description {
-    padding-bottom: 64px;
+  .reasons__title {
+    padding: 0 77px;
+  }
+
+  .reasons__slogan {
+    padding: 0 20px;
+  }
+
+  .reasons__item:nth-child(3) .reasons__slogan {
+    padding: 0 10px;
+  }
+
+  .reasons__item:nth-child(4) .reasons__slogan,
+  .reasons__item:nth-child(5) .reasons__slogan {
+    padding: 0 20px;
+  }
+
+  .reasons__item:nth-child(2) .reasons__wrap {
+    padding: 29px 63px 0;
+  }
+
+  .reasons__item:nth-child(2) .reasons__title {
+    padding: 0 50px;
+  }
+
+  .reasons__item:first-child .reasons__wrap {
+    padding-top: 6px;
   }
 }

@@ -1,15 +1,30 @@
 .page-main {
   display: flex;
   flex-direction: column;
-  margin-bottom: 6px;
   background-color: @white;
 }
 
 .page-main__intro {
   width: 268px;
-  padding: 26px 26px 13px;
+  padding: 0 26px 13px;
   position: relative;
-  margin: 0 auto;
+  margin: -34px auto 0;
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top 0 left -224px;
+}
+
+.page-main__intro::before {
+  content: url("/img/bg-intro-triangle-mobile.svg");
+  position: absolute;
+  top: 363px;
+  left: 50%;
+  margin-left: -160px;
+}
+
+.page-main__text-sedona {
+  padding: 88px 0 84px;
+  margin-left: -6px;
 }
 
 .page-main__intro::after {
@@ -24,6 +39,7 @@
   line-height: 26px;
   text-align: center;
   margin-bottom: 27px;
+  margin-top: 35px;
 }
 
 .page-main__reasons {
@@ -35,13 +51,52 @@
   .page-main__intro {
     width: 528px;
     padding: 34px 120px 37px;
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-position: top 0 left 0;
+    margin: 0 auto;
+  }
+
+  .page-main__text-sedona {
+    width: 464px;
+    height: 350px;
+    padding: 43px 0 101px;
+    margin-left: 31px;
   }
 
   .page-main__slogan {
     font-size: 21px;
   }
 
+  .page-main__intro::before {
+    content: url("/img/bg-intro-triangle-tablet.svg");
+    position: absolute;
+    top: 461px;
+    left: 50%;
+    margin-left: -384px;
+  }
+
   .page-main__intro::after {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__intro {
+    width: 960px;
+    background-image: url("/img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-main__intro::before {
+    content: url("/img/bg-intro-triangle-desktop.svg");
+    top: 462px;
+    margin-left: -600px;
+  }
+
+  .page-main__text-sedona {
+    margin-left: 248px;
+  }
+
+  .page-main__slogan {
+    padding: 0 166px;
   }
 }

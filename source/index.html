@@ -32,12 +32,17 @@
           </div>
         </nav>
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="85" alt="Логотип города Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="85" alt="Логотип города Седона">
+          </picture>
         </a>
       </header>
       <main class="page-main">
         <h1 class="visually-hidden">Путеводитель по городу Седона</h1>
         <section class="page-main__intro">
+          <img class="page-main__text-sedona" src="img/text-sedona-index.svg" width="280" height="216" alt="">
           <h2 class="page-main__slogan">Седона — небольшой  городок в Аризоне,  заслуживающий большего!</h2>
           <p class="page-main__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
@@ -47,11 +52,18 @@
               <div class="reasons__description reasons__description--blue">
                 <div class="reasons__wrap">
                   <h3 class="reasons__title">Настоящий городок</h3>
-                  <p class="reasons__number">-№1-</p>
+                  <p class="reasons__number">&#8211; №1 &#8211;</p>
                   <p class="reasons__slogan">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
               </div>
-              <img class="reasons__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Виды города Седона">
+              <picture>
+                <!--<source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@1x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">-->
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@1x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="reasons__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" srcset="img/main-city-mobile@2x.jpg 2x" alt="Виды города Седона">
+              </picture>
               <section class="advantages">
                 <ul class="advantages__list">
                   <li class="advantages__item advantages__item--housing">
@@ -75,18 +87,25 @@
             <li class="reasons__item">
               <div class="reasons__description reasons__description--blue">
                 <div class="reasons__wrap">
-                  <h3 class="reasons__title">Там есть Мост дьявола</h3>
-                  <p class="reasons__number">-№2-</p>
+                  <h3 class="reasons__title">Там есть<br> Мост дьявола</h3>
+                  <p class="reasons__number">&#8211; №2 &#8211;</p>
                   <p class="reasons__slogan">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
               </div>
-              <img class="reasons__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+              <picture>
+                <!--<source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@1x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">-->
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@1x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <img class="reasons__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+              </picture>
             </li>
             <li class="reasons__item">
               <div class="reasons__description reasons__description--border">
                 <div class="reasons__wrap">
                   <h3 class="reasons__title">Небольшая площадь</h3>
-                  <p class="reasons__number">-№3-</p>
+                  <p class="reasons__number">&#8211; №3 &#8211;</p>
                   <p class="reasons__slogan">Все интересные места находятся очень близко</p>
                 </div>
               </div>
@@ -95,7 +114,7 @@
               <div class="reasons__description reasons__description--border">
                 <div class="reasons__wrap">
                   <h3 class="reasons__title">Красивая дорога</h3>
-                  <p class="reasons__number">-№4-</p>
+                  <p class="reasons__number">&#8211; №4 &#8211;</p>
                   <p class="reasons__slogan">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
               </div>
@@ -104,7 +123,7 @@
               <div class="reasons__description">
                 <div class="reasons__wrap">
                   <h3 class="reasons__title">Мало туристов</h3>
-                  <p class="reasons__number">-№5-</p>
+                  <p class="reasons__number">&#8211; №5 &#8211;</p>
                   <p class="reasons__slogan">Большинство едет в гранд каньон и толпится там</p>
                 </div>
               </div>
@@ -116,8 +135,10 @@
             <h3 class="search__title">Заинтересовались?</h3>
             <p class="search__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
-          <a href="#" class="search__button button">Найти гостиницу</a>
-          <img class="search__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+          <a href="findAhotel.html" class="search__button button">Найти гостиницу</a>
+          <div id="map" class="search__map">
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A328a118d952796093b35db53951cf1d05a24aa7cb552cabb50d2c8a9ec2996bc&amp;lang=ru_RU&amp;scroll=true;id=map"></script>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
