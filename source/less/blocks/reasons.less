@@ -27,6 +27,7 @@
   padding: 8px 0 0;
   background-color: @lightgrey;
   text-align: center;
+  width: 320px;
 }
 
 .reasons__description picture {
@@ -81,6 +82,10 @@
   margin: 14px 0 28px;
 }
 
+.reasons__slogan br {
+  display: none;
+}
+
 .reasons__item:nth-child(4) .reasons__slogan,
 .reasons__item:nth-child(5) .reasons__slogan {
   padding: 0 11px;
@@ -131,7 +136,6 @@
   .reasons__title {
     font-size: 21px;
     margin: 45px 0 10px;
-    padding: 0 10px 0 9px;
   }
 
   .reasons__title br {
@@ -160,7 +164,11 @@
   }
 
   .reasons__item:nth-child(2) .reasons__wrap {
-    padding: 22px 43px 0;
+    padding: 22px 40px 0;
+  }
+
+  .reasons__item:nth-child(5) .reasons__title {
+    padding: 0 10px 0 9px;
   }
 }
 
@@ -178,12 +186,24 @@
     width: 800px;
   }
 
+  .reasons__wrap {
+    padding: 0 35px;
+  }
+
   .reasons__title {
     padding: 0 77px;
   }
 
   .reasons__slogan {
+    padding: 0 15px;
+  }
+
+  .reasons__item:first-child .reasons__slogan {
     padding: 0 20px;
+  }
+
+  .reasons__slogan br {
+    display: block;
   }
 
   .reasons__item:nth-child(3) .reasons__slogan {
@@ -192,7 +212,7 @@
 
   .reasons__item:nth-child(4) .reasons__slogan,
   .reasons__item:nth-child(5) .reasons__slogan {
-    padding: 0 20px;
+    padding: 0 26px;
   }
 
   .reasons__item:nth-child(2) .reasons__wrap {
@@ -200,7 +220,11 @@
   }
 
   .reasons__item:nth-child(2) .reasons__title {
-    padding: 0 50px;
+    padding: 0 49px;
+  }
+
+  .reasons__item:nth-child(5) .reasons__title {
+    padding: 0 85px;
   }
 
   .reasons__item:first-child .reasons__wrap {
