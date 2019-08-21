@@ -1,13 +1,21 @@
 .contacts {
+  display: flex;
   width: 280px;
   border: none;
   margin: 16px auto 0;
-  padding: 0 15px;
+  padding: 0 15px 3px;
   border-bottom: 1px solid @lightgrey;
+}
+
+.contacts legend {
+  display: flex;
+  justify-content: center;
+  width: 280px;
 }
 
 .contacts p {
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .contacts p:last-child {
@@ -20,18 +28,20 @@
 }
 
 .contacts input {
-  padding: 13px 59px 12px 18px;
+  padding: 13px 18px 12px 18px;
   margin-bottom: 3px;
+  width: 236px;
+  height: 25px;
 }
 
 .contacts__tel::after {
   content: "";
   position: absolute;
   top: 29px;
-  left: 203px;
+  left: 200px;
   width: 58px;
   height: 58px;
-  background-image: url("/img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-color: #e6e6e6;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -41,10 +51,10 @@
   content: "";
   position: absolute;
   top: 29px;
-  left: 203px;
+  left: 200px;
   width: 58px;
   height: 58px;
-  background-image: url("/img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
   background-color: #e6e6e6;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -59,10 +69,11 @@
   }
 
   .contacts legend {
-    display: flex;
-    text-align: center;
-    margin-bottom: 8px;
+    margin: 0 auto 8px;
     position: relative;
+    text-align: center;
+    padding: 0 125px;
+    width: 398px;
   }
 
   .contacts legend::before {
@@ -71,7 +82,7 @@
     width: 125px;
     height: 1px;
     top: 12px;
-    left: -184px;
+    left: 0;
     background-color: @grey;
   }
 
@@ -81,7 +92,7 @@
     width: 125px;
     height: 1px;
     top: 12px;
-    left: 341px;
+    left: 523px;
     background-color: @grey;
   }
 
@@ -89,8 +100,12 @@
     margin: 0 auto 25px;
   }
 
+  .contacts label {
+    margin: -2px 0 9px 22px;
+  }
+
   .contacts input {
-    width: 87%;
+    width: 547px;
   }
 
   .contacts__tel::after {
@@ -112,7 +127,7 @@
 
   .contacts__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .contacts p {
@@ -126,26 +141,27 @@
 
   .contacts legend {
     margin-bottom: 74px;
+    padding: 0 281px;
   }
 
   .contacts legend::before {
     width: 280px;
     top: 11px;
-    left: -342px;
   }
 
   .contacts legend::after {
     width: 280px;
     top: 11px;
-    left: 341px;
+    left: 680px;
   }
 
   .contacts label {
-    margin: 0 18px 8px 0;
+    margin: 21px 18px 8px 0;
   }
 
   .contacts input {
-    width: 229px;
+    width: 214px;
+    padding: 13px 18px 12px 16px;
   }
 
   .contacts__tel::after {
@@ -156,5 +172,9 @@
   .contacts__email::after {
     top: -21px;
     left: 420px;
+  }
+
+  .contacts p:last-child {
+    margin-left: 138px;
   }
 }

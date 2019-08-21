@@ -5,6 +5,12 @@
   display: flex;
 }
 
+.emotions legend {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+}
+
 .emotions textarea {
   background-color: #f2f2f2;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -36,10 +42,12 @@
   }
 
   .emotions legend {
-    display: flex;
+    display: inline-block;
     text-align: center;
     margin-bottom: 57px;
     position: relative;
+    padding: 0 125px;
+    width: 398px;
   }
 
   .emotions legend::before {
@@ -48,7 +56,7 @@
     width: 125px;
     height: 1px;
     top: 12px;
-    left: -197px;
+    left: 0;
     background-color: @grey;
   }
 
@@ -58,7 +66,7 @@
     width: 125px;
     height: 1px;
     top: 12px;
-    left: 325px;
+    left: 525px;
     background-color: @grey;
   }
 
@@ -70,16 +78,21 @@
 @media (min-width: @desktop-width) {
   .emotions {
     width: 960px;
-    margin: 16px auto 58px;
+    margin: 16px auto 60px;
+  }
+
+  .emotions legend {
+    padding: 0 281px;
   }
 
   .emotions legend::before {
     width: 280px;
-    left: -355px;
+    left: 0;
   }
 
   .emotions legend::after {
     width: 280px;
+    left: 680px;
   }
 
   .emotions textarea {

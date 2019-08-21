@@ -1,6 +1,8 @@
 .advantages {
-  margin: 0 auto;
-  padding: 13px 20px 24px;
+  margin: -7px auto 0;
+  padding: 21px 0 24px;
+  width: 320px;
+  background-color: @white;
 }
 
 .advantages ul {
@@ -17,6 +19,7 @@
 .advantages__item {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 4px 0 20px;
 }
 
 .advantages__title {
@@ -28,7 +31,11 @@
 
 .advantages__description {
   margin: 0 0 14px;
-  padding: 0 20px 0 51px;
+  padding: 0 37px 0 51px;
+}
+
+.advantages__description br {
+  display: none;
 }
 
 .advantages__item--housing svg {
@@ -56,19 +63,20 @@
   .advantages {
     width: 768px;
     padding: 0 0 48px;
-    margin: -9px auto 0;
+    margin: -6px auto 0;
   }
 
   .advantages__list {
     flex-direction: row;
     width: 768px;
     justify-content: space-around;
+    margin: -3px 0;
   }
 
   .advantages__item {
     flex-direction: column;
     width: 176px;
-    padding: 60px 0 0;
+    padding: 54px 0 0;
     text-align: center;
   }
 
@@ -94,6 +102,10 @@
     padding: 0 5px 0 5px;
   }
 
+  .advantages__description br {
+    display: block;
+  }
+
   .advantages__item--food .advantages__description {
     padding: 0 10px 0 10px;
   }
@@ -112,5 +124,6 @@
 
   .advantages__item {
     width: 304px;
+    padding: 54px 0 2px;
   }
 }

@@ -1,22 +1,36 @@
 .form-main__intro {
-  width: 320px;
+  width: 318px;
   margin: 0 auto;
   text-align: center;
   margin-top: -34px;
   line-height: 24px;
   border-bottom: 1px solid @grey;
   position: relative;
-  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-color: #cee0eb;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top -231px left -224px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.form-main__text {
+  margin: 51px 0 62px;
 }
 
 .form-main__intro::before {
-  content: url("/img/bg-intro-triangle-mobile.svg");
+  content: url("../img/bg-intro-triangle-mobile.svg");
   position: absolute;
   top: 132px;
   left: 50%;
   margin-left: -160px;
+}
+
+.form-main__intro div {
+  background-color: @white;
+  padding: 22px 0 1px;
 }
 
 .form-main__intro h2 {
@@ -31,18 +45,32 @@
 
 @media (min-width: @tablet-width) {
   .form-main__intro {
-    width: 768px;
+    width: 766px;
     padding: 0;
     margin-top: -28px;
     border-bottom: none;
-    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: top -228px left 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .form-main__text {
+    margin: 95px 0 110px;
+    width: 460px;
+    height: 78px;
   }
 
   .form-main__intro::before {
-    content: url("/img/bg-intro-triangle-tablet.svg");
+    content: url("../img/bg-intro-triangle-tablet.svg");
     top: 233px;
     margin-left: -384px;
+  }
+
+  .form-main__intro div {
+    padding: 50px 0 1px;
   }
 
   .form-main__intro h2 {
@@ -57,16 +85,28 @@
 
 @media (min-width: @desktop-width) {
   .form-main__intro {
-    width: 1200px;
+    width: 1198px;
     margin-top: 0;
-    background-image: url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: top -218px left 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .form-main__text {
+    margin: 101px 0 114px;
   }
 
   .form-main__intro::before {
-    content: url("/img/bg-intro-triangle-desktop.svg");
+    content: url("../img/bg-intro-triangle-desktop.svg");
     top: 244px;
     margin-left: -600px;
+  }
+
+  .form-main__intro div {
+    padding: 88px 0 1px;
   }
 
   .form-main__intro p {
