@@ -29,7 +29,6 @@ popupButtonError.addEventListener("click", function () {
   popupError.classList.remove("popup__error--opened");
   popupError.classList.add("popup__error--closed");
 })
-
 popupButtonReview.addEventListener("click", function () {
   popupReview.classList.remove("popup__review--opened");
   popupReview.classList.add("popup__review--closed");
