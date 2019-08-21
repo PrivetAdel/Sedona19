@@ -7,8 +7,8 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <script async src=js/picturefill.js></script>
   </head>
   <body>
@@ -179,7 +179,7 @@
           <h2>Что-то пошло не так!</h2>
           <p>Проверьте поля, выделенные красным, скорее всего вы забыли из заполнить</p>
         </div>
-        <button class="popup__button button" type="button" name="button">Ок</button>
+        <button class="popup__button popup__button--error button" type="button" name="button">Ок</button>
       </section>
       <section class="popup popup__review popup__review--closed">
         <div class="popup__text">
@@ -187,7 +187,7 @@
           <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="popup__wrap">
-          <button class="popup__button button" type="button" name="button">Закрыть окно</button>
+          <button class="popup__button popup__button--review button" type="button" name="button">Закрыть окно</button>
         </div>
       </section>
     </div>

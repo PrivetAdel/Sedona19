@@ -1,7 +1,8 @@
 var popupReview = document.querySelector(".popup__review");
 var popupError = document.querySelector(".popup__error");
 var formButton = document.querySelector(".form__button");
-var popupButton = document.querySelector(".popup__button");
+var popupButtonError = document.querySelector(".popup__button--error");
+var popupButtonReview = document.querySelector(".popup__button--review");
 var inputName = document.querySelector(".first-name");
 var inputFamily = document.querySelector(".family");
 var inputPhone = document.querySelector(".tel");
@@ -24,11 +25,12 @@ formButton.addEventListener("click", function() {
   }
 });
 
-popupButton.addEventListener("click", function () {
+popupButtonError.addEventListener("click", function () {
   popupError.classList.remove("popup__error--opened");
   popupError.classList.add("popup__error--closed");
 })
-popupButton.addEventListener("click", function () {
+
+popupButtonReview.addEventListener("click", function () {
   popupReview.classList.remove("popup__review--opened");
   popupReview.classList.add("popup__review--closed");
 })
