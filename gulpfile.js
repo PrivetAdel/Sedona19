@@ -15,8 +15,8 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var del = require("del");
 var server = require("browser-sync").create();
-var ghPages = require('gh-pages');
-var path = require('path');
+var ghPages = require("gh-pages");
+var path = require("path");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -67,7 +67,7 @@ gulp.task("webp", function () {
 });
 
 function deploy(cb) {
-  ghPages.publish(path.join(process.cwd(), './build'), cb);
+  ghPages.publish(path.join(process.cwd(), "./build"), cb);
 }
 exports.deploy = deploy;
 
