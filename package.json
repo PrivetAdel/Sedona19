@@ -21,7 +21,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.2.0",
-    "stylelint": "10.1.x",
+    "stylelint": "^13.3.3",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
