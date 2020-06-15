@@ -19,9 +19,11 @@
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.4.3",
-    "stylelint": "^13.3.3",
+    "readable-stream": "^3.6.0",
+    "stylelint": "^13.6.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {

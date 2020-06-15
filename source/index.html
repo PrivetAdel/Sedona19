@@ -5,11 +5,10 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
-    <script async="" src="js/picturefill.js"></script>
+    <script async="" src="js/picturefill.min.js"></script>
   </head>
   <body>
     <svg style="display: none;">
@@ -54,9 +53,6 @@
         <path d="M17.145 0H2.835C1.275 0 0 1.275 0 2.835v8.345c0 1.56 1.275 2.835 2.835 2.835h14.31c1.56 0 2.835-1.275 2.835-2.835V2.835C19.979 1.275 18.704 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/>
       </symbol>
     </svg>
-    <!--<div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>-->
     <div class="wrapper">
       <header class="page-header page-header__main">
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -110,7 +106,7 @@
                   <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@1x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-                  <img class="reasons__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" srcset="img/main-city-mobile@2x.jpg 2x" alt="Виды города Седона">
+                  <img class="reasons__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" srcset="img/main-city-mobile@2x.jpg 2x" loading="lazy" alt="Виды города Седона">
                 </picture>
               </div>
               <section class="advantages">
@@ -146,7 +142,7 @@
                   <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@1x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-                  <img class="reasons__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+                  <img class="reasons__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" srcset="img/main-bridge-mobile@2x.jpg 2x" loading="lazy" alt="Мост дьявола">
                 </picture>
               </div>
             </li>
@@ -224,6 +220,6 @@
         </div>
       </footer>
     </div>
-    <script async="" src="js/menu.js"></script>
+    <script async="" src="js/menu.min.js"></script>
   </body>
 </html>

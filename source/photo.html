@@ -5,11 +5,10 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
-    <script async src=js/picturefill.js></script>
+    <script async src=js/picturefill.min.js></script>
   </head>
   <body>
     <svg style="display: none;">
@@ -88,7 +87,7 @@
                   <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@1x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                  <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Закат">
+                  <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" srcset="img/photo-sunset-mobile@2x.jpg 2x" loading="lazy" alt="Закат">
                 </picture>
               </a>
               <div class="gallery__wrapper">
@@ -111,7 +110,7 @@
                   <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@1x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                  <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Кактус">
+                  <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" srcset="img/photo-cactus-mobile@2x.jpg 2x" loading="lazy" alt="Кактус">
                 </picture>
               </a>
               <div class="gallery__wrapper">
@@ -134,7 +133,7 @@
                   <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@1x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                  <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога">
+                  <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" srcset="img/photo-roads-mobile@2x.jpg 2x" loading="lazy" alt="Дорога">
                 </picture>
               </a>
               <div class="gallery__wrapper">
@@ -157,7 +156,7 @@
                   <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@1x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                  <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+                  <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" srcset="img/photo-bridge-mobile@2x.jpg 2x" loading="lazy" alt="Мост дьявола">
                 </picture>
               </a>
               <div class="gallery__wrapper">
@@ -183,9 +182,9 @@
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@1x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img src="img/video-mobile@1x.jpg" width="320" height="200" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+            <img src="img/video-mobile@1x.jpg" width="320" height="200" loading="lazy" alt="Видео">
           </picture>
           <div class="video__controls">
             <div class="video__scroll">
@@ -233,6 +232,6 @@
         </div>
       </footer>
     </div>
-    <script async="" src="js/menu.js"></script>
+    <script async="" src="js/menu.min.js"></script>
   </body>
 </html>
